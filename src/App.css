@@ -1,0 +1,35 @@
+/* App.css */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .part {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two images per row */
+    gap: 10px;
+    max-width: 100%;
+  }
+  
+  .part img {
+    width: 100%; /* Make the images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: adds a rounded corner effect */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+  }
+  
+  @media (min-width: 768px) {
+    .part {
+      grid-template-columns: repeat(3, 1fr); /* Three images per row on larger screens */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .part {
+      grid-template-columns: repeat(4, 1fr); /* Four images per row on tablets/desktops */
+    }
+  }
+  
